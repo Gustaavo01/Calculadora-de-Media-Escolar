@@ -1,0 +1,147 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f7fa;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.container {
+  background: white;
+  margin: 40px 20px;
+  padding: 30px 40px;
+  max-width: 400px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+  color: #00796b;
+  font-weight: 700;
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #00796b;
+  outline: none;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.button-group button {
+  flex: 1;
+  background-color: #00796b;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 12px 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.button-group button:hover {
+  background-color: #004d40;
+}
+
+.resultado {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 15px;
+  border-radius: 8px;
+  display: none;
+  transition: all 0.3s;
+  text-align: center;
+}
+
+.resultado.aprovado {
+  background-color: #d0f0e4;
+  color: #00796b;
+}
+
+.resultado.recuperacao {
+  background-color: #fff4db;
+  color: #ff9800;
+}
+
+.resultado.reprovado {
+  background-color: #fcdede;
+  color: #d32f2f;
+}
+
+.historico {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.historico h2 {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.historico ul {
+  list-style-type: none;
+  padding: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.historico li {
+  padding: 8px 10px;
+  background: #f1f1f1;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.historico li strong {
+  color: #00796b;
+}

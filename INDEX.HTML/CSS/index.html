@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculadora de Média</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <div class="container">
+    <h1><i class="fas fa-calculator"></i> Calculadora de Média</h1>
+    
+    <form id="media-form">
+      <div class="input-group">
+        <label for="nota1">Nota 1</label>
+        <input type="number" id="nota1" placeholder="Digite a primeira nota" step="0.01" min="0" max="10" required>
+      </div>
+      <div class="input-group">
+        <label for="nota2">Nota 2</label>
+        <input type="number" id="nota2" placeholder="Digite a segunda nota" step="0.01" min="0" max="10" required>
+      </div>
+
+      <div class="button-group">
+        <button type="submit"><i class="fas fa-check"></i> Calcular Média</button>
+        <button type="button" id="btn-limpar"><i class="fas fa-broom"></i> Limpar</button>
+      </div>
+    </form>
+
+    <div id="resultado" class="resultado"></div>
+
+    <div id="historico" class="historico">
+      <h2><i class="fas fa-clock"></i> Histórico de Médias</h2>
+      <ul id="lista-historico"></ul>
+    </div>
+  </div>
+
+
+</body>
+</html>
